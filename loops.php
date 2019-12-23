@@ -17,6 +17,7 @@
         echo 'Number ' .$i;
         echo '<br>';
     }
+    echo '<br>';
 
     
     # While Loop usually used over for loops if you dont know the set number/condition
@@ -28,6 +29,7 @@
         echo '<br>';
         $i++;
     }
+    echo '<br>';
 
     
     # Do While rarely used (always gonna run at least once no matter what)
@@ -41,6 +43,7 @@
         $i++;
     }
     while($i < 10);
+    echo '<br>';
 
     
     # FOREACH loop, meant to work with array
@@ -51,11 +54,14 @@
         echo $person;
         echo '<br>';
     }
+    echo '<br>';
 
-    $people = array('Brad', 'Jose', 'Will');
+    echo 'FOREACH LOOPS (associative):<br>';
+    $people = array('Brad' => 'brad@gmail.com', 'Jose' => 'jose@gmail.com', 'Will' => 'will@gmail.com');
 
-    foreach ($people as $person){
-        echo $person;
+    foreach ($people as $person => $email){
+        echo $person. ': ' .$email;
         echo '<br>';
     }
+    echo '<br>';
 ?>
